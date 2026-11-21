@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Афиша Москвы — план на день</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><h1>Афиша Москвы</h1><label for="day">День посещения</label>
+      <select id="day" disabled></select></header>
+    <p id="notice" role="status"></p>
+    <button id="retry" hidden>Повторить загрузку</button>
+    <div class="columns">
+      <section><h2>События дня</h2><p>Время московское</p><ul id="events"></ul></section>
+      <section class="plan"><h2>Мой план</h2><ol id="plan"></ol>
+        <p id="empty">Добавь событие из афиши.</p>
+        <footer>Стоимость билетов <strong id="total">0 ₽</strong></footer>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
